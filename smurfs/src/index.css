@@ -4,7 +4,27 @@ body {
   font-family: sans-serif;
 }
 
+.App {
+  background-color: #224de3;
+  height: 100vh;
+}
+
+.wrapper {
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  background-color:	#e3d900;
+}
+
 .forms {
   width: 500px;
   margin: auto;
+}
+
+.wrapper .actives {
+  color: red;
+}
+
+.wrapper .btns {
+  margin: 0% 2%;
 }

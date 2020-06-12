@@ -10,9 +10,10 @@ function AddSmurf(props) {
     const [formValues, handleChanges] = useForm();
     return (
         <div className="forms">
-            <h1>Get Smurfs: </h1>
-            <Button onClick={() => getData()}>Get Smurfs Now!</Button>
+            <h1>Get Smurfs: <Button onClick={() => getData()}>Get Current Smurfs</Button></h1>
+            <hr/>
             <Smurf/>
+            <hr/>
             <h5>Add A Smurf!</h5>
             <Form>
                 <Input 
@@ -37,10 +38,13 @@ function AddSmurf(props) {
                     onChange={handleChanges}>
                 </Input>
                 <Button 
+                    className="btns"
                     onClick={() => sendData(formValues)}>Add a Smurf!</Button>
                 <Button 
+                    className="btns"
                     onClick={() => deleteData(activeSmurf)}> Delete Smurf</Button>
                 <Button 
+                    className="btns"
                     onClick={() => editData(formValues, activeSmurf)}>Edit Smurf</Button>
             </Form>
         </div>
